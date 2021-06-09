@@ -22,7 +22,7 @@ build:
 
 test:
 	cd devenv-cc && \
-	    ./gradlew :spoofax3.core.root:statix.completions:cleanTest :spoofax3.core.root:statix.completions:test --stacktrace --info --continue
+	    ./gradlew :spoofax3.core.root:statix.completions.bench:run
 
 clean:
 	cd devenv-cc && \
