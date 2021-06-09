@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11:jdk-11.0.11_0-debian
+FROM adoptopenjdk:11-jdk-openj9-focal
 
 WORKDIR /home/
 
@@ -13,18 +13,22 @@ RUN apt-get update \
     wget \
     unzip \
     git \
-    python3 \
+    make \
  && rm -rf /var/lib/apt/lists/*
 
 # Switch to bash
-SHELL ["/bin/bash", "-c"]
+#SHELL ["/bin/bash", "-c"]
 
 # Setup Git
 RUN git config --global user.name "Daniel A. A. Pelsmaeker"
 RUN git config --global user.email "647530+Virtlink@users.noreply.github.com"
 
 # Copy files
-COPY docker/Makefile .
+COPY Makefile .
+COPY papers/ ./papers/
+
+# Install Python requirements
+RUN pip3 install -r papers/oopsla21/datanalysis/requirements.txt
 
 # Run
 ENV REMOTE_URL?=https://github.com/metaborg/devenv
