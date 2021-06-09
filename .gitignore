@@ -1,1 +1,3 @@
 /devenv-cc/
+.venv/
+.python-version

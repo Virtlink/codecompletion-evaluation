@@ -13,6 +13,7 @@ RUN apt-get update \
     wget \
     unzip \
     git \
+    python3 \
  && rm -rf /var/lib/apt/lists/*
 
 # Switch to bash

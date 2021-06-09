@@ -22,8 +22,11 @@ build:
 
 test:
 	cd devenv-cc && \
-	    ./gradlew :spoofax3.core.root:statix.completions:test --stacktrace --info --continue
+	    ./gradlew :spoofax3.core.root:statix.completions:cleanTest :spoofax3.core.root:statix.completions:test --stacktrace --info --continue
 
 clean:
 	cd devenv-cc && \
 	    ./gradlew cleanAll --stacktrace --info
+
+plot:
+	python3 papers/oopsla21/datanalysis/main.py -p devenv-cc/ -o output/
