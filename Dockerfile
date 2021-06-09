@@ -27,5 +27,6 @@ COPY docker/Makefile .
 
 # Run
 ENV REMOTE_URL?=https://github.com/metaborg/devenv
+ENV BRANCH?=code-completion
 ENV TARGET=all
 ENTRYPOINT make $TARGET
