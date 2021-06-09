@@ -4,6 +4,7 @@
 # Should be the same in Dockerfile
 REMOTE_URL?=https://github.com/metaborg/devenv
 BRANCH?=code-completion
+OUTPUT?=output/
 
 all: pull build #test
 
@@ -29,4 +30,4 @@ clean:
 	    ./gradlew cleanAll --stacktrace --info
 
 plot:
-	python3 papers/oopsla21/datanalysis/main.py -p devenv-cc/ -o output/
+	python3 papers/oopsla21/datanalysis/main.py -p devenv-cc/ -o $(OUTPUT)

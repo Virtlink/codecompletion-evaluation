@@ -33,5 +33,6 @@ RUN pip3 install -r papers/oopsla21/datanalysis/requirements.txt
 # Run
 ENV REMOTE_URL?=https://github.com/metaborg/devenv
 ENV BRANCH?=code-completion
+ENV OUTPUT?=output/
 ENV TARGET=all
 ENTRYPOINT make $TARGET
