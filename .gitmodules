@@ -1,0 +1,4 @@
+[submodule "papers"]
+	path = papers
+	url = git@bitbucket.org:eelcovisser/editor-papers.git
+	shallow = true
