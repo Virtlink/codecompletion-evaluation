@@ -42,7 +42,7 @@ RUN git clone --recursive $REMOTE_URL devenv-cc \
 # Build the project
 RUN cd devenv-cc \
  && ./gradlew buildAll --stacktrace --info -x :spoofax3.core.root:statix.completions:test
- 
+
 # Copy files
 COPY papers/ ./papers/
 
@@ -53,5 +53,4 @@ RUN pip3 install -r papers/oopsla21/datanalysis/requirements.txt
 COPY Makefile .
 
 # Run
-ENV TARGET=all
-ENTRYPOINT make $TARGET
+ENTRYPOINT make

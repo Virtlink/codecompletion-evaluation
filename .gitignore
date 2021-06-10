@@ -1,3 +1,5 @@
 /devenv-cc/
 .venv/
 .python-version
+/output/
+/output-det/

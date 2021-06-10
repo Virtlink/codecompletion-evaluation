@@ -9,7 +9,8 @@ set -o xtrace
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 docker image build -t codecompletion-eval ${DIR}
-docker container run -it --rm codecompletion-eval \
+docker container run -it --rm \
   -v ${DIR}/output-det:/home/output-det \
   -e OUTPUT=/home/output-det \
+  codecompletion-eval \
   all
