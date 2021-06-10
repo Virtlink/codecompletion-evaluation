@@ -6,15 +6,15 @@ REMOTE_URL?=https://github.com/metaborg/devenv
 BRANCH?=code-completion
 OUTPUT?=output/
 
-all: pull build #test
-
+all: pull build test plot
 
 pull:
 	if [ ! -d devenv-cc/.git ]; then git clone --recursive $(REMOTE_URL) devenv-cc; fi
 	cd devenv-cc && \
 	    git checkout $(BRANCH) && \
-	    git pull --rebase && \
-	    git submodule update --init --remote --recursive && \
+	    git reset --hard HEAD && \
+	    git pull --rebase --recurse-submodules && \
+		sed -i 's!git@github.com:metaborg!https://github.com/metaborg!g' repo.properties && \
 	    ./repo update
 
 build:
