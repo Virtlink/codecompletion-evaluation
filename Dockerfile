@@ -39,16 +39,18 @@ RUN git clone --recursive $REMOTE_URL devenv-cc \
  && sed -i 's!git@github.com:metaborg!https://github.com/metaborg!g' repo.properties \
  && ./repo update --info
 
+# Build the project
+RUN cd devenv-cc \
+ && ./gradlew buildAll --stacktrace --info -x :spoofax3.core.root:statix.completions:test
+ 
 # Copy files
-COPY Makefile .
 COPY papers/ ./papers/
 
 # Install Python requirements
 RUN pip3 install -r papers/oopsla21/datanalysis/requirements.txt
 
-# Build the project
-RUN cd devenv-cc \
- && ./gradlew buildAll --stacktrace --info -x :spoofax3.core.root:statix.completions:test
+# Copy more files
+COPY Makefile .
 
 # Run
 ENV TARGET=all
