@@ -19,7 +19,21 @@ RUN apt-get update \
  && rm -rf /var/lib/apt/lists/*
 
 # Switch to bash
-#SHELL ["/bin/bash", "-c"]
+SHELL ["/bin/bash", "-c"]
+
+# Create the user
+ARG GNAME=myuser
+ARG GID=1000
+ARG UNAME=myuser
+ARG UID=1000
+ARG UHOME=/home/myuser/
+RUN set -o errexit -o nounset \
+ && groupadd --gid ${GID} ${GNAME} \
+ && useradd --create-home --home "${UHOME}" --uid ${UID} --gid ${GID} "${UNAME}" \
+ && mkdir -p "${UHOME}"
+ENV HOME "${UHOME}"
+USER ${UNAME}
+WORKDIR ${UHOME}
 
 # Setup Git
 RUN git config --global user.name "Daniel A. A. Pelsmaeker" \
@@ -44,13 +58,13 @@ RUN cd devenv-cc \
  && ./gradlew buildAll --stacktrace --info -x :spoofax3.core.root:statix.completions:test
 
 # Copy files
-COPY papers/ ./papers/
+COPY --chown=${UNAME} papers/ ./papers/
 
 # Install Python requirements
 RUN pip3 install -r papers/oopsla21/datanalysis/requirements.txt
 
 # Copy more files
-COPY Makefile .
+COPY --chown=${UNAME} Makefile .
 
 # Run
 ENTRYPOINT make
