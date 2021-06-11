@@ -16,7 +16,7 @@ pull:
 	    git checkout $(BRANCH) && \
 	    git reset --hard HEAD && \
 	    git pull --rebase --recurse-submodules && \
-	    sed -i '' 's!git@github.com:metaborg!https://github.com/metaborg!g' repo.properties && \
+	    perl -i -pe 's!git@github.com:metaborg!https://github.com/metaborg!g' repo.properties && \
 	    ./repo update
 
 build:
@@ -30,11 +30,11 @@ completeness:
 
 generate:
 	./devenv-cc/spoofax.pie/core/statix.completions.bench/build/install/statix.completions.bench/bin/statix.completions.bench \
-	    generate --output=tiger-tests/
+	    generate --output=$(OUTPUT)tiger-tests/
 
 bench:
 	./devenv-cc/spoofax.pie/core/statix.completions.bench/build/install/statix.completions.bench/bin/statix.completions.bench \
-	    run --input=tiger-tests/ --file=results.csv
+	    run --input=$(OUTPUT)tiger-tests/ --file=$(OUTPUT)results.csv
 
 clean:
 	cd devenv-cc && \
