@@ -1,4 +1,4 @@
-.PHONY: all pull build test
+.PHONY: all all_completeness all_bench pull build completeness generate bench clean plot
 #.SILENT:
 
 # Should be the same in Dockerfile
@@ -6,7 +6,9 @@ REMOTE_URL?=https://github.com/metaborg/devenv
 BRANCH?=code-completion
 OUTPUT?=output/
 
-all: pull build test plot
+all: all_bench
+all_completeness: pull build completeness plot
+all_bench: pull build generate bench #plot
 
 pull:
 	if [ ! -d devenv-cc/.git ]; then git clone --recursive $(REMOTE_URL) devenv-cc; fi
@@ -14,16 +16,25 @@ pull:
 	    git checkout $(BRANCH) && \
 	    git reset --hard HEAD && \
 	    git pull --rebase --recurse-submodules && \
-		sed -i 's!git@github.com:metaborg!https://github.com/metaborg!g' repo.properties && \
+	    sed -i '' 's!git@github.com:metaborg!https://github.com/metaborg!g' repo.properties && \
 	    ./repo update
 
 build:
 	cd devenv-cc && \
-	    ./gradlew buildAll --stacktrace --info -x :spoofax3.core.root:statix.completions:test
+	    ./gradlew buildAll --stacktrace --info -x :spoofax3.core.root:statix.completions:test && \
+	    ./gradlew :spoofax3.core.root:statix.completions.bench:installDist
 
-test:
-	cd devenv-cc && \
-	    ./gradlew :spoofax3.core.root:statix.completions.bench:run
+completeness:
+	./devenv-cc/spoofax.pie/core/statix.completions.bench/build/install/statix.completions.bench/bin/statix.completions.bench \
+	    completeness
+
+generate:
+	./devenv-cc/spoofax.pie/core/statix.completions.bench/build/install/statix.completions.bench/bin/statix.completions.bench \
+	    generate --output=tiger-tests/
+
+bench:
+	./devenv-cc/spoofax.pie/core/statix.completions.bench/build/install/statix.completions.bench/bin/statix.completions.bench \
+	    run --input=tiger-tests/ --file=results.csv
 
 clean:
 	cd devenv-cc && \
