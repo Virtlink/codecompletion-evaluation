@@ -22,11 +22,11 @@ RUN apt-get update \
 SHELL ["/bin/bash", "-c"]
 
 # Create the user
-ARG GNAME=myuser
-ARG GID=1000
-ARG UNAME=myuser
-ARG UID=1000
-ARG UHOME=/home/myuser/
+ARG GNAME=virtlink
+ARG GID=1003
+ARG UNAME=virtlink
+ARG UID=1003
+ARG UHOME=/home/virtlink/
 RUN set -o errexit -o nounset \
  && groupadd --gid ${GID} ${GNAME} \
  && useradd --create-home --home "${UHOME}" --uid ${UID} --gid ${GID} "${UNAME}" \
