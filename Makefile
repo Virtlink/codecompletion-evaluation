@@ -30,11 +30,11 @@ completeness:
 
 generate:
 	./devenv-cc/spoofax.pie/core/statix.completions.bench/build/install/statix.completions.bench/bin/statix.completions.bench \
-	    generate --output=$(OUTPUT)tiger-tests/
+	    generate --output=$(OUTPUT)/tiger-tests/
 
 bench:
 	./devenv-cc/spoofax.pie/core/statix.completions.bench/build/install/statix.completions.bench/bin/statix.completions.bench \
-	    run --input=$(OUTPUT)tiger-tests/ --file=$(OUTPUT)results.csv
+	    run --input=$(OUTPUT)/tiger-tests/ --file=$(OUTPUT)/results.csv
 
 clean:
 	cd devenv-cc && \
