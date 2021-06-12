@@ -88,8 +88,8 @@ class TestResult:
 def main():
     # Parse the command-line arguments
     try:
-        arguments, values = getopt.getopt(sys.argv[1:], "i:o:", [
-            "input=",
+        arguments, values = getopt.getopt(sys.argv[1:], "f:o:", [
+            "file=",
             "output="
         ])
     except getopt.error as err:
@@ -135,8 +135,9 @@ def read_results(input_file: Path) -> List[TestResult]:
         with input_file.open() as csv_file:
             print("Reading CSV: " + str(input_file))
             csv_reader = csv.reader(csv_file, delimiter=',')
+            # Go to first row
             next(csv_reader, None)
-            # TODO: Check that this is not skipping an important row!
+            # Skip header row
             next(csv_reader, None)
 
             testResults: List[TestResult] = []
