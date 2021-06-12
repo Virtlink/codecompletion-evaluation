@@ -1,0 +1,1 @@
+Mod(Let([VarDec("sum",Tid("int"),Int("3")),VarDec("n",Tid("int"),Int("7"))],[IfThen(Gt(LValue2Exp(Var2LValue(Var("n"))),Int("0")),Seq([Assign(Var2LValue(Var("sum")),Plus(LValue2Exp(Var2LValue(Var("sum"))),LValue2Exp(Var2LValue(Var("n"))))),X-Plhdr()])),LValue2Exp(Var2LValue(Var("sum")))]))

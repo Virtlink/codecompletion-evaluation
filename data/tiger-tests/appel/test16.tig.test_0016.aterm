@@ -1,0 +1,1 @@
+Mod(Let([TypeDecs([TypeDec("a",Tid("c")),TypeDec("b",Tid("a")),TypeDec("c",Tid(X-Plhdr())),TypeDec("d",Tid("a"))])],[String("\"\"")]))

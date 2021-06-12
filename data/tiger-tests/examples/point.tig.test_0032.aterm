@@ -1,0 +1,1 @@
+Mod(Let([TypeDecs([TypeDec("point",RecordTy([Field("x","int"),Field("y","int")]))]),VarDec("origin",Tid("point"),Record("point",[InitField("x",Int("1")),InitField("y",Int("2"))]))],[LValue2Exp(X-Plhdr()),Assign(Var2LValue(Var("origin")),NilExp())]))

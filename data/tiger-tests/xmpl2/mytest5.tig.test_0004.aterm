@@ -1,0 +1,1 @@
+Mod(Let([VarDecNoType(X-Plhdr(),Int("1")),VarDecNoType("b",Seq([Assign(Var2LValue(Var("a")),Int("2")),LValue2Exp(Var2LValue(Var("a")))]))],[Assign(Var2LValue(Var("b")),Seq([Assign(Var2LValue(Var("a")),Int("2")),LValue2Exp(Var2LValue(Var("a")))]))]))

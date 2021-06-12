@@ -1,0 +1,1 @@
+Mod(Let([VarDec("i",Tid("int"),Int("1"))],[While(Lt(LValue2Exp(Var2LValue(Var("i"))),Int("10")),Seq(X-Plhdr()))]))

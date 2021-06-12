@@ -1,0 +1,1 @@
+Mod(Let([VarDecNoType("x",String("\"a\\n\"")),VarDecNoType("y",String("\"b\\n\"")),VarDecNoType("z",Call("concat",[LValue2Exp(Var2LValue(Var("x"))),LValue2Exp(Var2LValue(Var("y")))]))],[Call("print",[LValue2Exp(Var2LValue(Var("z")))]),Call("exit",[Int("0")])]))

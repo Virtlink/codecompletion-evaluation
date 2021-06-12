@@ -1,0 +1,1 @@
+Mod(Uminus(Seq([Neq(Seq([Eq(X-Plhdr(),Int("8"))]),Seq([Or(And(Lt(Int("9"),Seq([Leq(Seq([Geq(Int("10"),Int("11"))]),Int("12"))])),Int("13")),Int("14"))]))])))

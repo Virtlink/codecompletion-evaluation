@@ -1,0 +1,1 @@
+Mod(Let([FunDecs([FunDec("fact",[],Tid("int"),Exp-Plhdr())]),VarDec("v",X-Plhdr(),Int("2"))],[Assign(LValue-Plhdr(),Int("3"))]))

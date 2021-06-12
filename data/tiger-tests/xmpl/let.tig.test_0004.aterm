@@ -1,0 +1,1 @@
+Mod(Let([VarDec(X-Plhdr(),Tid("int"),Int("1")),VarDecNoType("z",Int("2")),VarDec("y",Tid("int"),Plus(LValue2Exp(Var2LValue(Var("x"))),Int("1")))],[Plus(Plus(LValue2Exp(Var2LValue(Var("x"))),LValue2Exp(Var2LValue(Var("y")))),LValue2Exp(Var2LValue(Var("z"))))]))

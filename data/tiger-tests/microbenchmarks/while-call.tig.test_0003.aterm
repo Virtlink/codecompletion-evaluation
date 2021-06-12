@@ -1,0 +1,1 @@
+Mod(Let([X-Plhdr()],[For(Var("i"),Int("0"),Int("10000"),Seq([Call("fact",[Int("10")]),Call("bar",[]),Call("foo",[]),Call("plus",[]),Call("minus",[])]))]))

@@ -1,0 +1,1 @@
+Mod(Let([TypeDecs([TypeDec("rectype",RecordTy([Field("name","string"),Field("id","int")]))]),X-Plhdr()],[Assign(Var2LValue(Var("b")),NilExp())]))

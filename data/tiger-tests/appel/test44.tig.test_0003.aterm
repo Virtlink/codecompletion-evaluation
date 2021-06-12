@@ -1,0 +1,1 @@
+Mod(Let([X-Plhdr(),VarDec("b",Tid("rectype"),NilExp())],[Assign(Var2LValue(Var("b")),NilExp())]))

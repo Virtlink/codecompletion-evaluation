@@ -1,0 +1,1 @@
+Mod(Let([FunDecs([FunDec("even",[FArg("n",Tid("int"))],Tid("int"),If(Leq(LValue2Exp(Var2LValue(Var("n"))),Int("0")),Int("1"),Call("odd",[Minus(LValue2Exp(Var2LValue(Var("n"))),Int("1"))]))),FunDec("odd",[FArg("n",Tid("int"))],Tid("int"),X-Plhdr())])],[Call("even",[Int("5")])]))

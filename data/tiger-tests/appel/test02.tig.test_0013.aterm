@@ -1,0 +1,1 @@
+Mod(Let([TypeDecs([TypeDec("myint",Tid("int")),TypeDec("arrtype",ArrayTy("myint"))]),X-Plhdr()],[LValue2Exp(Var2LValue(Var("arr1")))]))

@@ -1,0 +1,1 @@
+Mod(Let([TypeDecs(X-Plhdr()),VarDecNoType("b",Int("4")),TypeDecs([TypeDec("a",Tid("string"))])],[Int("0")]))

@@ -1,0 +1,1 @@
+Mod(Seq([Call(X-Plhdr(),[String("\"a\\n\"")]),Call("exit",[Int("0")])]))

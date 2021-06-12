@@ -1,0 +1,1 @@
+Mod(Let([VarDecNoType("x",Int("1"))],[Let([VarDecNoType("x",Plus(LValue2Exp(Var2LValue(Var("x"))),Int("3")))],[Let(X-Plhdr(),[Call("x",[Int("3"),Int("4")])]),Plus(LValue2Exp(Var2LValue(Var("x"))),Int("5"))]),Let([VarDecNoType("y",Int("3"))],[Plus(Seq([Plus(LValue2Exp(Var2LValue(Var("x"))),Int("6"))]),LValue2Exp(Var2LValue(Var("y"))))])]))

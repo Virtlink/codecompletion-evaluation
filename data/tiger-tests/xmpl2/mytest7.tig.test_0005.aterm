@@ -1,0 +1,1 @@
+Mod(For(Var("i"),Int(X-Plhdr()),Int("10"),Seq([For(Var("j"),Int("2"),Int("3"),Break()),Break()])))

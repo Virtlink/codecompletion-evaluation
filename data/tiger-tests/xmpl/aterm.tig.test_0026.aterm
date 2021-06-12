@@ -1,0 +1,1 @@
+Mod(Let([TypeDecs([TypeDec("aterm",RecordTy([Field("fun","string"),Field("args","alist")])),TypeDec("alist",RecordTy([Field("hd","aterm"),Field("tl","alist")]))]),FunDecs(X-Plhdr())],[Call("test1",[])]))

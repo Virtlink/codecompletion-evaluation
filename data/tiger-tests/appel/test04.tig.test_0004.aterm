@@ -1,0 +1,1 @@
+Mod(Let([FunDecs(X-Plhdr())],[Call("printnl",[Call("inttostring",[Call("nfactor",[Int("10")])])])]))

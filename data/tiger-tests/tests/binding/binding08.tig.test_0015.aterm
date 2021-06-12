@@ -1,0 +1,1 @@
+Mod(Let([TypeDecs([TypeDec("list",RecordTy([Field("hd","int"),Field("tl","list")]))]),X-Plhdr()],[Record("list",[InitField("hd",Int("1")),InitField("tl",Record("list",[InitField("hd",Int("0")),InitField("tl",NilExp())]))])]))

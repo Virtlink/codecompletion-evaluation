@@ -1,0 +1,1 @@
+Mod(Let([FunDecs([ProcDec("do_nothing1",[FArg("a",Tid("int")),FArg("b",Tid("string"))],X-Plhdr()),ProcDec("do_nothing2",[FArg("d",Tid("int"))],Call("do_nothing1",[LValue2Exp(Var2LValue(Var("d"))),String("\"str\"")]))])],[Call("do_nothing1",[Int("0"),String("\"str2\"")])]))

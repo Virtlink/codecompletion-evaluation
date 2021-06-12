@@ -1,0 +1,1 @@
+Mod(Let([VarDec("x",Tid("int"),Int("2")),TypeDecs([TypeDec(X-Plhdr(),RecordTy([Field("name","string"),Field("age","int")]))])],[Record("mytype",[InitField-Plhdr()])]))

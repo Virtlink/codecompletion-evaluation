@@ -1,0 +1,1 @@
+Mod(Let([VarDec("x",Tid("int"),Int(X-Plhdr())),VarDec("f",Tid("int"),Int("1"))],[For(Var("y"),Int("1"),LValue2Exp(Var2LValue(Var("x"))),Seq([Assign(Var2LValue(Var("f")),Times(LValue2Exp(Var2LValue(Var("f"))),LValue2Exp(Var2LValue(Var("y")))))])),Call("print",[String("\"s\"")]),Call("print",[Call("chr",[LValue2Exp(Var2LValue(Var("x")))])])]))

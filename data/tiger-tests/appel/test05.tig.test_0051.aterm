@@ -1,0 +1,1 @@
+Mod(Let([TypeDecs([TypeDec("intlist",RecordTy([Field("hd","int"),Field("tl","intlist")])),TypeDec("tree",RecordTy([Field("key","int"),Field("children","treelist")])),TypeDec("treelist",RecordTy([Field("hd","tree"),Field("tl","treelist")]))]),VarDec("lis",Tid("intlist"),Record("intlist",[InitField("hd",Int("0")),InitField("tl",NilExp())]))],[LValue2Exp(X-Plhdr())]))

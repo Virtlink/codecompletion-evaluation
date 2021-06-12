@@ -1,0 +1,1 @@
+Mod(Let([VarDec("x",Tid("int"),Int("2")),X-Plhdr()],[Record("mytype",[InitField-Plhdr()])]))

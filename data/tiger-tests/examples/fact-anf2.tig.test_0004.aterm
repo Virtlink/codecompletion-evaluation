@@ -1,0 +1,1 @@
+Mod(Let([FunDecs(X-Plhdr()),VarDecNoType("r",Call("fact",[Int("10")]))],[LValue2Exp(Var2LValue(Var("r")))]))

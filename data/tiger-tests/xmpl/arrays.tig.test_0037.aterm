@@ -1,0 +1,1 @@
+Mod(Let([TypeDecs([TypeDec("vector",ArrayTy("int")),TypeDec("matrix",ArrayTy("vector"))]),VarDec("v",Tid("vector"),Array("vector",Int("3"),Int("1"))),VarDec("t",Tid("matrix"),Array("matrix",Int("2"),Array("vector",Int("3"),Int("0"))))],X-Plhdr()))

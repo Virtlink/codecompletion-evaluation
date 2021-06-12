@@ -1,0 +1,1 @@
+Mod(Let([TypeDecs([TypeDec("myint",Tid("int")),TypeDec("arrtype",ArrayTy("myint"))]),VarDec("arr1",Tid("arrtype"),Array("arrtype",Int("10"),Int("0")))],[X-Plhdr()]))

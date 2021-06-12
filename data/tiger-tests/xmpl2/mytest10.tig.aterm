@@ -1,0 +1,1 @@
+Mod(Seq([Call("print",[String("\"a\\n\"")]),Call("exit",[Int("0")])]))

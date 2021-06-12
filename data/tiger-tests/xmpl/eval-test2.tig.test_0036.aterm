@@ -1,0 +1,1 @@
+Mod(Let([FunDecs([FunDec("fac",[FArg("n",Tid("int"))],Tid("int"),If(Eq(LValue2Exp(Var2LValue(Var("n"))),Int("0")),Int("1"),Times(LValue2Exp(Var2LValue(Var("n"))),Call("fac",[Minus(LValue2Exp(Var2LValue(Var(X-Plhdr()))),Int("1"))]))))])],[Call("fac",[Int("5")])]))

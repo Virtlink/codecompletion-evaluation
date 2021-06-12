@@ -1,0 +1,1 @@
+Mod(Let([FunDecs([FunDec("f",[FArg("x",Tid("int"))],Tid(X-Plhdr()),Plus(LValue2Exp(Var2LValue(Var("x"))),Int("1")))])],[Call("f",[Call("f",[Int("3")])])]))

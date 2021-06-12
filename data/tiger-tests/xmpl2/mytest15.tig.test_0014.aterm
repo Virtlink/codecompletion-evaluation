@@ -1,0 +1,1 @@
+Mod(Let([FunDecs([FunDec("inttostring",[FArg("n",Tid("int"))],Tid("string"),X-Plhdr())])],[Call("inttostring",[Int("10")])]))

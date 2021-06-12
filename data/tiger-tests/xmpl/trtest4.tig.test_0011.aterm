@@ -1,0 +1,1 @@
+Mod(Let([VarDec("x",Tid("string"),String("\"abc\""))],[LValue2Exp(X-Plhdr())]))

@@ -1,0 +1,1 @@
+Mod(Let([X-Plhdr(),VarDec("lis",Tid("intlist"),Record("intlist",[InitField("hd",Int("0")),InitField("tl",NilExp())]))],[LValue2Exp(Var2LValue(Var("lis")))]))

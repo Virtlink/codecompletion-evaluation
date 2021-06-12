@@ -1,0 +1,1 @@
+Mod(Let([FunDecs([FunDec("pred",[FArg("x",Tid("int"))],X-Plhdr(),Int("1"))])],[If(Call("pred",[Int("1")]),Int("1"),Int("2"))]))

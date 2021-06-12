@@ -1,0 +1,1 @@
+Mod(Let([VarDecNoType("i",Int("1")),VarDecNoType("j",LValue2Exp(Var2LValue(Var("i")))),TypeDecs([TypeDec("vec",ArrayTy("int"))]),VarDec("v",Tid("vec"),Array("vec",Int("5"),Int("0")))],[For(Var("i"),Int("0"),Int("4"),Assign(X-Plhdr(),Times(LValue2Exp(Var2LValue(Var("i"))),Int("2")))),LValue2Exp(Subscript(Var2LValue(Var("v")),Int("3")))]))

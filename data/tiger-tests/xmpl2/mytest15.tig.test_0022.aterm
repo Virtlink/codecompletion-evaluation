@@ -1,0 +1,1 @@
+Mod(Let([FunDecs([FunDec("inttostring",[FArg("n",Tid("int"))],Tid("string"),If(Lt(LValue2Exp(Var2LValue(Var("n"))),Int("10")),X-Plhdr(),Call("concat",[Call("inttostring",[Divide(LValue2Exp(Var2LValue(Var("n"))),Int("10"))]),Call("inttostring",[Seq([Divide(LValue2Exp(Var2LValue(Var("n"))),Int("10"))])])])))])],[Call("inttostring",[Int("10")])]))

@@ -1,0 +1,1 @@
+Mod(Let([TypeDecs([TypeDec("myrec",RecordTy([Field("x","int")]))]),VarDec("rec1",Tid("myrec"),Record("myrec",[InitField("x",Int("1"))]))],[Assign(FieldVar(Var2LValue(Var("rec1")),"x"),Int("99")),LValue2Exp(FieldVar(Var2LValue(Var("rec1")),X-Plhdr()))]))

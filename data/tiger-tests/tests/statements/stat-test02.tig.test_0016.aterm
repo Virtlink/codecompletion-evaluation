@@ -1,0 +1,1 @@
+Mod(Let([VarDec("sum",Tid("int"),Int("0")),VarDec("n",Tid("int"),Int("5"))],[X-Plhdr(),LValue2Exp(Var2LValue(Var("sum")))]))

@@ -1,0 +1,1 @@
+Mod(Let([FunDecs([FunDec("fac",[FArg("n",Tid("int"))],Tid("int"),X-Plhdr())])],[Call("fac",[Int("5")])]))

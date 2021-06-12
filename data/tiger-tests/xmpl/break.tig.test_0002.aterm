@@ -1,0 +1,1 @@
+Mod(Let(X-Plhdr(),[While(Lt(LValue2Exp(Var2LValue(Var("x"))),Int("10")),Seq([Assign(Var2LValue(Var("x")),Plus(LValue2Exp(Var2LValue(Var("x"))),Int("1"))),Call("print",[Call("inttostring",[LValue2Exp(Var2LValue(Var("x")))])]),Break()])),Call("print",[Call("inttostring",[LValue2Exp(Var2LValue(Var("x")))])])]))

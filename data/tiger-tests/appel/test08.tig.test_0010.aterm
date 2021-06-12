@@ -1,0 +1,1 @@
+Mod(If(Seq([Gt(Int("10"),Int("20"))]),Int(X-Plhdr()),Int("40")))

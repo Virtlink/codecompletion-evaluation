@@ -1,0 +1,1 @@
+Mod(Let([TypeDecs([TypeDec("vector",ArrayTy("int"))])],[Let([VarDec("v1",Tid("vector"),Array("vector",Int("10"),Int("1")))],[For(Var("i"),Int("0"),Int("9"),Call("printi",[X-Plhdr()]))])]))

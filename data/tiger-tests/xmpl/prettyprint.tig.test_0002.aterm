@@ -1,0 +1,1 @@
+Mod(Let(X-Plhdr(),[Let([VarDec("t",Tid("tree"),Call("node",[String("\"a\""),Call("node",[String("\"b\""),NilExp(),NilExp()]),Call("node",[String("\"c\""),NilExp(),Call("node",[String("\"d\""),NilExp(),NilExp()])])]))],[Call("prettyprint",[LValue2Exp(Var2LValue(Var("t")))])])]))

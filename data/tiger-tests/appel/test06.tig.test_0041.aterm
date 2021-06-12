@@ -1,0 +1,1 @@
+Mod(Let([FunDecs([ProcDec("do_nothing1",[FArg("a",Tid("int")),FArg("b",Tid("string"))],IfThen(Lt(LValue2Exp(Var2LValue(Var("a"))),Int("25")),Call("do_nothing2",[Plus(LValue2Exp(Var2LValue(Var("a"))),Int("1"))]))),ProcDec("do_nothing2",[FArg("d",Tid("int"))],X-Plhdr())])],[Call("do_nothing1",[Int("0"),String("\"str2\"")])]))
