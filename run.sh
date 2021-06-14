@@ -7,7 +7,7 @@ set -o xtrace
 
 # Get the script directory
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-OUTPUT="${DIR}/output-nondet/"
+OUTPUT="${DIR}/output/"
 
 docker image build -t codecompletion-eval ${DIR}
 mkdir -p ${OUTPUT}
