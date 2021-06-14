@@ -1,0 +1,1 @@
+Mod(Let([FunDecs([ProcDec("f",[FArg("v",Tid("int"))],X-Plhdr())])],[Call("f",[Int("4")])]))

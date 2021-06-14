@@ -1,0 +1,1 @@
+Mod(For(Var("i"),Int("0"),Int("30"),Seq([Call("timeGo",X-Plhdr()),Let([VarDecNoType("counter",Int("0"))],[While(Lt(LValue2Exp(Var2LValue(Var("counter"))),Int("10000")),Assign(Var2LValue(Var("counter")),Plus(LValue2Exp(Var2LValue(Var("counter"))),Int("1"))))]),Call("timeStop",[])])))

@@ -1,0 +1,1 @@
+Mod(Let(X-Plhdr(),[Call("fact",[LValue2Exp(Var2LValue(Var("x")))])]))

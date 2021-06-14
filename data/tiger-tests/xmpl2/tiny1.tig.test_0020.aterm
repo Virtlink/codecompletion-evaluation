@@ -1,0 +1,1 @@
+Mod(If(Lt(LValue2Exp(Var2LValue(Var("n"))),Int("1")),Int("1"),Times(LValue2Exp(Var2LValue(Var("n"))),Call("fact",[Minus(X-Plhdr(),Int("1"))]))))

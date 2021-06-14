@@ -1,0 +1,1 @@
+Mod(For(Var("i"),Int("0"),Int("30"),Seq([Call("timeGo",[]),Let([TypeDecs([TypeDec("Cons",RecordTy([Field("val","int"),Field("next","Cons")]))]),X-Plhdr()],[Let([VarDec("result",Tid("Cons"),Call("tail",[Call("makeList",[Int("15")]),Call("makeList",[Int("10")]),Call("makeList",[Int("6")])]))],[Call("length",[LValue2Exp(Var2LValue(Var("result")))])])]),Call("timeStop",[])])))

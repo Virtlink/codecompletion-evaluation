@@ -1,0 +1,1 @@
+Mod(Let([TypeDecs([TypeDec("rectype1",RecordTy([Field("name","string"),Field("id","int")])),TypeDec("rectype2",RecordTy([Field("name","string"),Field("id","int")]))]),VarDec("rec1",Tid("rectype1"),X-Plhdr())],[LValue2Exp(Var2LValue(Var("rec1")))]))

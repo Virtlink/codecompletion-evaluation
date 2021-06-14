@@ -1,0 +1,1 @@
+Mod(For(Var("k"),Int("0"),Int("30"),Seq([Call("timeGo",[]),For(Var(X-Plhdr()),Int("0"),Int("200"),Let([VarDecNoType("cumsum",Int("0"))],[Let([VarDecNoType("foo",Uminus(Int("99")))],[Assign(Var2LValue(Var("cumsum")),Plus(LValue2Exp(Var2LValue(Var("cumsum"))),Int("1")))])])),Call("timeStop",[])])))

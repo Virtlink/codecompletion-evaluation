@@ -1,0 +1,1 @@
+Mod(For(Var("i"),Int(X-Plhdr()),String("\" \""),Assign(Var2LValue(Var("i")),Minus(LValue2Exp(Var2LValue(Var("i"))),Int("1")))))

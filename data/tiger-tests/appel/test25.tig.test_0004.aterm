@@ -1,0 +1,1 @@
+Mod(Let([VarDecNoType(X-Plhdr(),Int("0"))],[LValue2Exp(FieldVar(Var2LValue(Var("d")),"f"))]))

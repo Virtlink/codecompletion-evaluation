@@ -1,0 +1,1 @@
+Mod(For(Var("i"),Int("0"),Int("30"),Seq([Call("timeGo",[]),Let([TypeDecs([TypeDec("intArray",ArrayTy("int"))])],X-Plhdr()),Call("timeStop",[])])))

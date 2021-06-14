@@ -1,0 +1,1 @@
+Mod(Let([TypeDecs([TypeDec("intlist",RecordTy([Field("hd","int"),Field("tl","intlist")]))]),VarDec("l",Tid("intlist"),NilExp())],X-Plhdr()))

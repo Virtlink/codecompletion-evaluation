@@ -1,0 +1,1 @@
+Mod(Let([TypeDecs([TypeDec("vec",ArrayTy("int")),TypeDec("vector",RecordTy([Field("dim","int"),Field("d","vec")])),TypeDec("mat",ArrayTy("vector")),TypeDec("matrix",RecordTy([Field("x","int"),Field("y","int"),Field("d","mat")]))]),X-Plhdr()],[Call("matrixMul",[LValue2Exp(Var2LValue(Var("A"))),Call("createDiagMat",[LValue2Exp(Var2LValue(Var("X")))])])]))

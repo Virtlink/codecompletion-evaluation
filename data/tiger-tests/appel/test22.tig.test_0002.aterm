@@ -1,0 +1,1 @@
+Mod(Let(X-Plhdr(),[Assign(FieldVar(Var2LValue(Var("rec1")),"nam"),String("\"asd\""))]))

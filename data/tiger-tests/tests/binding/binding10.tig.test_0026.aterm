@@ -1,0 +1,1 @@
+Mod(Let([FunDecs([FunDec("f",[],Tid("int"),Call("g",[Int("1")]))]),VarDecNoType("x",Int("1")),FunDecs([FunDec("g",[FArg("x",X-Plhdr())],Tid("int"),Call("f",[]))])],[Int("1")]))

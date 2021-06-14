@@ -1,0 +1,1 @@
+Mod(Let([VarDecNoType("cumsum",Int("0"))],[For(Var("c"),Int("0"),Int("30"),Seq(X-Plhdr()))]))

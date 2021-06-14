@@ -1,0 +1,1 @@
+Mod(Let([TypeDecs([TypeDec("r",X-Plhdr())])],[Record("r",[InitField("x",Int("1")),InitField("y",Int("1")),InitField("y",Int("2"))]),Record("r",[InitField("x",Int("1")),InitField("y",Int("1")),InitField("z",Int("3"))])]))

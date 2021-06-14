@@ -1,0 +1,1 @@
+Mod(Let([FunDecs([ProcDec("nfactor",[FArg("n",Tid("int"))],X-Plhdr())])],[Call("nfactor",[Int("10")])]))

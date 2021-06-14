@@ -1,0 +1,1 @@
+Mod(Let([TypeDecs([TypeDec("arrtype",ArrayTy("int")),TypeDec("rectype",RecordTy([Field("name","string"),Field("id","int")]))]),VarDecNoType("rec",Record("rectype",[InitField("name",String("\"aname\"")),X-Plhdr()])),VarDecNoType("arr",Array("arrtype",Int("3"),Int("0")))],[If(Neq(LValue2Exp(Var2LValue(Var("rec"))),LValue2Exp(Var2LValue(Var("arr")))),Int("3"),Int("4"))]))

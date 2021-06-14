@@ -1,0 +1,1 @@
+Mod(Let([TypeDecs(X-Plhdr()),VarDecNoType("a",Array("arrayty",Int("10"),String("\" \"")))],[Int("0")]))

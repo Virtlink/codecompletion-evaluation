@@ -1,0 +1,1 @@
+Mod(While(Seq([Gt(Int("10"),Int("5"))]),Plus(X-Plhdr(),Int("6"))))

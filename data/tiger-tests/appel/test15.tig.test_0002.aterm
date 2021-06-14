@@ -1,0 +1,1 @@
+Mod(IfThen(X-Plhdr(),Int("3")))

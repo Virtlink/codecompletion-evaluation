@@ -1,0 +1,1 @@
+Mod(Let([FunDecs([ProcDec("nfactor",[FArg("n",Tid("int"))],If(X-Plhdr(),Int("1"),Times(LValue2Exp(Var2LValue(Var("n"))),Call("nfactor",[Minus(LValue2Exp(Var2LValue(Var("n"))),Int("1"))]))))])],[Call("nfactor",[Int("10")])]))

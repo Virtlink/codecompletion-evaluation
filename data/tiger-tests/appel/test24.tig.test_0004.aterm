@@ -1,0 +1,1 @@
+Mod(Let([VarDecNoType(X-Plhdr(),Int("0"))],[LValue2Exp(Subscript(Var2LValue(Var("d")),Int("3")))]))

@@ -1,0 +1,5 @@
+---
+filename: "microbenchmarks/while-loop.tig"
+testCaseCount: 42
+textSize: 152
+astSize: 42

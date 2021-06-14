@@ -1,0 +1,1 @@
+Mod(Let([TypeDecs([TypeDec("arrtype1",ArrayTy("int")),TypeDec("arrtype2",ArrayTy("int"))]),VarDec("arr1",Tid("arrtype1"),Array("arrtype2",Int("10"),Int("0")))],X-Plhdr()))

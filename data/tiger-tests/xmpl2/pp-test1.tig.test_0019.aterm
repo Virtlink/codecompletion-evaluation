@@ -1,0 +1,1 @@
+Mod(Let([FunDecs([ProcDec("printint",[FArg("i",Tid("int"))],IfThen(Lt(LValue2Exp(Var2LValue(Var("i"))),Int(X-Plhdr())),Int("1")))])],[Call("printint",[Int("3")])]))

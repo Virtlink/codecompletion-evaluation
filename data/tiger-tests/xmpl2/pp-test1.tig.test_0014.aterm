@@ -1,0 +1,1 @@
+Mod(Let([FunDecs([ProcDec("printint",[FArg("i",Tid("int"))],IfThen(Lt(X-Plhdr(),Int("0")),Int("1")))])],[Call("printint",[Int("3")])]))

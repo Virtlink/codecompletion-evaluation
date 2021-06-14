@@ -1,0 +1,1 @@
+Mod(Let([TypeDecs([TypeDec("rectype",RecordTy([Field("name","string"),Field("id","int")]))]),VarDecNoType("rec1",Record("rectype",[InitField("name",String("\"Name\"")),InitField("id",Int(X-Plhdr()))]))],[Assign(FieldVar(Var2LValue(Var("rec1")),"nam"),String("\"asd\""))]))

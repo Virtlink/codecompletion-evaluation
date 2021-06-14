@@ -1,0 +1,1 @@
+Mod(Let(X-Plhdr(),[Call("matrixMul",[LValue2Exp(Var2LValue(Var("A"))),Call("createDiagMat",[LValue2Exp(Var2LValue(Var("X")))])])]))

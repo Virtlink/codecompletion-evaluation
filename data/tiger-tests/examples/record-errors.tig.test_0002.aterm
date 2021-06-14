@@ -1,0 +1,1 @@
+Mod(Let(X-Plhdr(),[Assign(Var2LValue(Var("p")),Record("point",[InitField("x",Int("3")),InitField("y",Int("3")),InitField("z",String("\"a\""))])),Assign(Var2LValue(Var("p")),Record("point",[InitField("x",Int("3"))]))]))

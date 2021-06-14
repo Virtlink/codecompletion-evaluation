@@ -1,0 +1,1 @@
+Mod(IfThen(Int("20"),Int(X-Plhdr())))

@@ -1,0 +1,1 @@
+Mod(Seq([For(Var("x"),Int("1"),Int("10"),Call("print",[Call("chr",[LValue2Exp(Var2LValue(Var("x")))])])),LValue2Exp(X-Plhdr())]))
