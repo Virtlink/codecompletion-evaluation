@@ -128,6 +128,8 @@ def main():
 
     print('Calculating...')
     completionTimes = [t.completionTime for t in sorted_results]
+    print('Test cases: ' + str(len(completionTimes)))
+    print('Test suites: ' + str(len(set([t.testName for t in sorted_results]))))
     print('Median: ' + str(statistics.median(completionTimes)))
     print('Mean: ' + str(statistics.mean(completionTimes)))
     print('Quantiles: ' + str(statistics.quantiles(completionTimes)))
