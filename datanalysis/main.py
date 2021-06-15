@@ -8,6 +8,7 @@ from itertools import groupby
 from pathlib import Path
 from typing import List, Set, Dict, Tuple, Optional
 from shutil import copyfile
+import statistics
 
 TEST_SUBPATH = Path('spoofax.pie/core/statix.completions.bench/src/main/resources/tiger')
 TESTRESULT_SUBPATH = Path('spoofax.pie/core/statix.completions.bench/output')
@@ -124,6 +125,12 @@ def main():
     plt.savefig(output_dir / "box_bin_plt.png", bbox_inches='tight')
     plt.savefig(output_dir / "performance.pdf", bbox_inches='tight')
     plt.close(box_bin_fig)
+
+    print('Calculating...')
+    completionTimes = [t.completionTime for t in sorted_results]
+    print('Median: ' + str(statistics.median(completionTimes)))
+    print('Mean: ' + str(statistics.mean(completionTimes)))
+    print('Quantiles: ' + str(statistics.quantiles(completionTimes)))
 
     print('Done!')
 
