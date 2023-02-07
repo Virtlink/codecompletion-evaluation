@@ -132,6 +132,8 @@ def main():
     print('Test suites: ' + str(len(set([t.testName for t in sorted_results]))))
     print('Median: ' + str(statistics.median(completionTimes)))
     print('Mean: ' + str(statistics.mean(completionTimes)))
+    print('Min: ' + str(min(completionTimes)))
+    print('Max: ' + str(max(completionTimes)))
     print('Quantiles: ' + str(statistics.quantiles(completionTimes)))
 
     print('Done!')
@@ -189,14 +191,15 @@ def plot_box_binned(test_results: List[TestResult], bin_size: int, projector):
 def plot_box(datas: List[List[int]], labels: List[str]):
     fig = plt.figure(figsize=(10, 5))
 
-    plt.title('Tiger test files')
+    plt.title('Tiger performance tests')
     plt.xlabel('time (ms)')
-    plt.ylabel('size (characters)')
+    plt.ylabel('size (AST nodes)')
 
     # Creating plot
-    plt.xlim(0, 15000)
+    plt.xlim(0, 10000)
     plt.boxplot(datas, labels=labels, vert=False)
     plt.tight_layout()
+    plt.axvline(x=1000, ymin=0, ymax=1)
     return fig
 
 
